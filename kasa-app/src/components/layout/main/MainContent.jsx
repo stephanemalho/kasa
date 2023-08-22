@@ -1,12 +1,12 @@
-import React from 'react'
-import BackgroundSection from './BackgroundSection/BackgroundSection'
+import React from "react";
+import BackgroundSection from "./BackgroundSection/BackgroundSection";
 
 const MainContent = () => {
   return (
     <main>
-      <BackgroundSection />
+      <BackgroundSection />  
     </main>
-  )
-}
+  );
+};
 
-export default MainContent
+export default MainContent;
