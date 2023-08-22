@@ -1,9 +1,9 @@
 header {
-  background-color:rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
   left: 50%;
   top: 0;
-	transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 1;
   padding: 40px 100px;
   height: 68px;
@@ -38,4 +38,27 @@ nav a:hover {
 h1 {
   top: 100px;
   position: relative;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 210px;
+}
+
+.footer img {
+  margin-top: 75px;
+}
+
+.footer h4 {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 34.224px */
 }
