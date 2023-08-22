@@ -1,14 +1,16 @@
-import './App.css';
-import LOGO from './LOGO.png';
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <img src={LOGO} alt="Kasa" />
-      <h1>Kasa</h1>
-      <p>Chic apartment in the heart of Lyon</p>
-    </div>
-  );
+  <Routes>
+    {/* 
+    <Route path="/" element={<Home />} />
+    <Route path="/house" element={<House />} />
+    <Route path="/about" element={<About />} />
+    <Route path="*" element={<NotFound />} /> */}
+  </Routes>
+  )
 }
 
 export default App;
