@@ -1,6 +1,6 @@
 export const links = [
   {
-    text: "Acceuil",
+    text: "Accueil",
     url: "/",
     id: 2,
   },
