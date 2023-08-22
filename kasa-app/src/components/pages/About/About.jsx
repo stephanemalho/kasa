@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Header from "../../layout/header/Header";
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <>
+      <Header />
+      <h1>About</h1>
+    </>
+  );
+};
 
-export default About
+export default About;
