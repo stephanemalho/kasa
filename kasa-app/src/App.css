@@ -7,8 +7,8 @@ header {
   z-index: 1;
   padding: 40px 100px;
   height: 68px;
-  width: 90vw;
   max-width: 1240px;
+  width: 90vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,9 +35,56 @@ nav a:hover {
   text-decoration-line: underline;
 }
 
-h1 {
-  top: 100px;
+main {
+  background-color: #fff;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 600px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.backgroundUrl {
+  display: flex;
   position: relative;
+  width: 90vw;
+  height: 223px;
+  max-width: 1240px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+.backgroundUrl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./assets/images/backgroundUrl.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 1; /* Opacity of the image */
+  filter: brightness(0.7); /* Darken the image */
+  border-radius: 25px;
+}
+
+.display-title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-family: Montserrat;
+  font-size: 48px;
 }
 
 .footer {
