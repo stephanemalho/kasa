@@ -1,10 +1,13 @@
 import React from "react";
-import BackgroundSection from "./BackgroundSection/BackgroundSection";
+import BackgroundSection from "./backgroundSection/BackgroundSection";
+import HousingSection from "./housing/HousingSection";
+
 
 const MainContent = () => {
   return (
     <main>
-      <BackgroundSection />  
+      <BackgroundSection /> 
+      <HousingSection />
     </main>
   );
 };

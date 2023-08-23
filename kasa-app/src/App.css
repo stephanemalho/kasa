@@ -87,6 +87,54 @@ main {
   font-size: 48px;
 }
 
+.housing-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  width: 90vw;
+  height: auto;
+}
+
+.housing-card__container {
+  width: 340px;
+  height: 340px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(214, 122, 127, 1)  100%);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  margin: 55px auto;
+}
+
+.housing-card__img {
+  width: 100%;
+  height: 255px;
+  border-radius: 25px 25px 0px 0px;
+  object-fit: cover;
+}
+
+.housing-card__content {
+  display: flex;
+  padding-left: 10px;
+  align-items: flex-start;
+  justify-content: left;
+  height: 85px;
+}
+
+.housing-card__title {
+  color: #FFF;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 142.6%; /* 25.668px */
+}
+
 .footer {
   background-color: #000;
   color: #fff;
