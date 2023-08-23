@@ -1,21 +1,16 @@
-import housings from "../../../../../data/housing"
-import CardImage from "./detail/CardImage"
-import CardTitle from "./detail/CardTitle"
+import housings from "../../../../../data/housing";
+import CardArticle from "./detail/CardArticle";
 
 const HousingCard = () => {
   return (
     <>
-      { housings.map(housing => {
+      {housings.map((housing) => {
         return (
-          <article className="housing-card__container" key={housing.id}>
-            <CardImage cover={housing.cover} title={housing.title} />
-            <CardTitle title={housing.title} />
-          </article>
-        )
-      }
-      )}
+          <CardArticle key={housing.id} id={housing.id} cover={housing.cover} title={housing.title} />
+        );
+      })}
     </>
-  )
-}
+  );
+};
 
-export default HousingCard
+export default HousingCard;
