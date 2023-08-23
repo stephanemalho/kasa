@@ -135,6 +135,71 @@ font-weight: 500;
 line-height: 142.6%; /* 25.668px */
 }
 
+.house-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #43adef;
+  border-radius: 25px;
+  margin: 150px auto;
+  width: 90vw;
+  height: 650px;
+}
+
+.image-container {
+  width: 100%;
+  height: 415px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.house-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  height: 218px;
+}
+.head-house-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+}
+.house-content__title {
+  width: 450px;
+}
+
+.house-content__title h2 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 142.6%; /* 68.224px */
+  margin: 0;
+}
+
+.house-content__host {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 167px;
+  height: 60px;
+}
+
+.house-content__host__avatar img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .footer {
   background-color: #000;
   color: #fff;
