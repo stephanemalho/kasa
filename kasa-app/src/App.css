@@ -92,7 +92,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 100px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 25px;
   width: 90vw;
   height: auto;
@@ -103,7 +103,11 @@ main {
   height: 340px;
   box-sizing: border-box;
   border-radius: 25px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(214, 122, 127, 1)  100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(214, 122, 127, 1) 100%
+  );
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   grid-column-gap: 20px;
@@ -127,12 +131,12 @@ main {
 }
 
 .housing-card__title {
-  color: #FFF;
-font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 142.6%; /* 25.668px */
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 25.668px */
 }
 
 .house-section {
@@ -166,7 +170,7 @@ line-height: 142.6%; /* 25.668px */
   padding-top: 15px;
   height: 218px;
 }
-.head-house-content{
+.head-house-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -189,16 +193,61 @@ line-height: 142.6%; /* 25.668px */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 167px;
-  height: 60px;
+  flex-wrap: wrap;
+  width: 180px;
+  height: 100px;
+  background-color: yellow;
 }
 
-.house-content__host__avatar img {
+.house-content__user-identity {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+}
+
+.house-content__user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.house-content__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60px;
+  margin-left: 10px;
+}
+
+.house-content__host__avatar {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   object-fit: cover;
 }
+
+.house-content__tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  padding: 0;
+  width: 80%;
+}
+
+.house-content__tags li {
+  list-style: none;
+  background-color: #ff6060;
+  border-radius: 10px;
+  color: white;
+  padding: 2px 30px 2px 30px;
+  margin: 0 5px 0 0;
+  text-align: center;
+  display: inline;
+  white-space: nowrap;
+}
+
+
 
 .footer {
   background-color: #000;
