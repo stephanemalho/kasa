@@ -11,6 +11,7 @@ const House = () => {
   const { id } = useParams();
   const house = housings.find((house) => house.id === id);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const ranking = `${currentImageIndex + 1}/${house.pictures.length}`
 
   const nextImage = () => {
     if (currentImageIndex === house.pictures.length - 1) {
@@ -28,6 +29,8 @@ const House = () => {
     }
   };
 
+  console.log("point length", currentImageIndex );
+
   console.log(id);
   console.log(house);
   return (
@@ -35,8 +38,9 @@ const House = () => {
       <Header />
       <section className="house-section">
         <div className="image-container">
-          <AiOutlineLeft size={60} onClick={prevImage} className="carousel-icon-left" />
+          <AiOutlineLeft size={60} onClick={prevImage} className="carousel-icon-left"  />
           <img src={house.pictures[currentImageIndex]} alt={house.title} />
+          <span className="ranking-img">{ranking}</span>
           <AiOutlineRight size={60} onClick={nextImage} className="carousel-icon-right" />
         </div>
         <div className="house-content">

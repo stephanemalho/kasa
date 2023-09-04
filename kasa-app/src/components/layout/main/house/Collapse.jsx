@@ -31,7 +31,7 @@ const Collapse = ({ title, houseInfo, houseList }) => {
       >
         <p>{houseInfo}</p>
         {houseList && (
-          <ul className="house-content__equipments">
+          <ul className="house-content__equipments" >
             {houseList.map((house) => (
               <li key={house}>{house}</li>
             ))}

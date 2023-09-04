@@ -206,6 +206,14 @@ main {
   right: 20px;
 } 
 
+.ranking-img {
+  position: absolute;
+  color:white;
+  bottom: 15px;
+  right: 50%;
+  font-size: large;
+}
+
 .house-content__title h2 {
   font-family: Montserrat;
   font-weight: 500;
