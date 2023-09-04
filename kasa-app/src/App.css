@@ -196,13 +196,20 @@ main {
   flex-wrap: wrap;
   width: 180px;
   height: 100px;
-  background-color: yellow;
+}
+
+.house-content__user {
+  width: 100%;
 }
 
 .house-content__user-identity {
   display: flex;
   align-items: center;
   padding-top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .house-content__user {

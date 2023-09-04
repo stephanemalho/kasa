@@ -3,6 +3,7 @@ import Header from "../../layout/header/Header";
 import Footer from "../../layout/footer/Footer";
 import { useParams } from "react-router-dom";
 import housings from "../../../data/housing";
+import StarRating from "../../ReusableUI/StarRating";
 
 const House = () => {
   const { id } = useParams();
@@ -39,7 +40,7 @@ const House = () => {
                 </div>
               </div>
               <p className="house-content__rating">
-                {/* Le map des étoiles sear ici */}
+                <StarRating rating={house.rating} />
               </p>
             </div>
           </div>
