@@ -3,7 +3,7 @@ import BackgroundSection from "./backgroundSection/BackgroundSection";
 import HousingSection from "./housing/HousingSection";
 
 
-const MainContent = () => {
+const MainHome = () => {
   return (
     <main>
       <BackgroundSection /> 
@@ -12,4 +12,4 @@ const MainContent = () => {
   );
 };
 
-export default MainContent;
+export default MainHome;
