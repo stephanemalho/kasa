@@ -3,7 +3,7 @@ import Header from "../../layout/header/Header";
 import Footer from "../../layout/footer/Footer";
 import { useParams } from "react-router-dom";
 import housings from "../../../data/housing";
-import StarRating from "../../ReusableUI/StarRating";
+import StarRating from "../../layout/main/housing/housingCard/detail/StarRating";
 
 const House = () => {
   const { id } = useParams();
