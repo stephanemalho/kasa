@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 const Collapse = ({ title, houseInfo, houseList }) => {
+  // State
   const [isOpen, setisOpen] = useState(false);
-
-  const handleMoreInfo = () => {
-    setisOpen(!isOpen);
-  };
-
+  // Behavior
+  const handleMoreInfo = () => setisOpen(!isOpen);
+  // JSX
   return (
     <div className="collapses">
     <div
