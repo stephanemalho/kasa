@@ -1,12 +1,11 @@
 import React from "react";
-import BackgroundSection from "./backgroundSection/BackgroundSection";
+import BackgroundSection from "../../ReusableUI/BackgroundSection";
 import HousingSection from "./housing/HousingSection";
-
 
 const MainHome = () => {
   return (
     <main>
-      <BackgroundSection /> 
+      <BackgroundSection titleStyle="display-title" bgUrl="backgroundUrl" />
       <HousingSection />
     </main>
   );
