@@ -46,7 +46,7 @@ main {
   margin: 0 auto;
 }
 
-.backgroundUrl {
+.backgroundUrl, .backgroundAboutUrl {
   display: flex;
   position: relative;
   width: 90vw;
@@ -65,6 +65,21 @@ main {
   right: 0;
   bottom: 0;
   background-image: url("./assets/images/backgroundUrl.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 1; /* Opacity of the image */
+  filter: brightness(0.7); /* Darken the image */
+  border-radius: 25px;
+}
+
+.backgroundAboutUrl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./assets/images/backgroundAboutUrl.png");
   background-size: cover;
   background-position: center;
   opacity: 1; /* Opacity of the image */
@@ -169,7 +184,7 @@ main {
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 15px;
-  height: 218px;
+  height: auto;
 }
 .head-house-content {
   display: flex;
@@ -287,7 +302,7 @@ main {
   white-space: nowrap;
 }
 
-.house-content__collapse {
+.content__collapse {
   cursor: pointer;
   position: relative;
   display: flex;
@@ -301,7 +316,7 @@ main {
   width: 510px;
 }
 
-.house-content__opened {
+.content__opened {
   cursor: pointer;
   position: relative;
   display: flex;
@@ -334,19 +349,24 @@ main {
   margin-top: 80px;
 }
 
-.house-content__collapse p {
+.collapses-height {
+  height: 200px;
+}
+
+.content__collapse p {
   padding-left: 20px;
 }
 
-.house-content__opened p {
+.content__opened p {
   padding-left: 20px;
 }
 
-.house-content__description-hidde {
+.content__description-hidde {
   display: none;
+
 }
 
-.house-content__description-open{
+.content__description-open{
   background-color: #f6f6f6;
   color: #ff6060;
   border-radius: 0px 0px 10px 10px;
@@ -354,6 +374,7 @@ main {
   top: 50px;
   z-index: 2;
   width: 100%;
+  min-height:100px;
 }
 
 .house-content__equipments  {
@@ -378,6 +399,7 @@ main {
 }
 
 /* not found pages */
+
 .title-not-found {
   font-family: Montserrat;
   font-style: normal;
@@ -414,6 +436,16 @@ main {
   text-align: center;
   margin: 140px 0;
   cursor: pointer;
+}
+
+/* about page */
+
+.about-width {
+  width: 80vw;
+}
+
+.about-section {
+  height: auto;
 }
 
 .footer {

@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
-const Collapse = ({ title, houseInfo, houseList }) => {
+const Collapse = ({ title, houseInfo, houseList, width }) => {
   // State
   const [isOpen, setisOpen] = useState(false);
   // Behavior
   const handleMoreInfo = () => setisOpen(!isOpen);
   // JSX
   return (
-    <div className="collapses">
+    <div className={`collapses ${width && width} ${isOpen && "collapses-height"}`}>
     <div
       className={
-        isOpen ? "house-content__opened " : "house-content__collapse"
+        isOpen ? `content__opened ${width && width}` : `content__collapse ${width && width}`
       }
       onClick={handleMoreInfo}
     >
@@ -24,13 +24,13 @@ const Collapse = ({ title, houseInfo, houseList }) => {
       <div
         className={
           isOpen
-            ? "house-content__description-open"
-            : "house-content__description-hidde"
+            ? "content__description-open"
+            : "content__description-hidde"
         }
       >
         <p>{houseInfo}</p>
         {houseList && (
-          <ul className="house-content__equipments" >
+          <ul className="content__equipments" >
             {houseList.map((house) => (
               <li key={house}>{house}</li>
             ))}
