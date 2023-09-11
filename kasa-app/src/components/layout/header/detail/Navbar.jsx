@@ -1,17 +1,22 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { links } from './links' // import the links array from the links.js file
+import { NavLink, useLocation } from 'react-router-dom';
+import { links } from './links';
 
 const Navbar = () => {
+
+  const { pathname } = useLocation();
+
   return (
     <nav>
-      {links.map((link) => {
-        return (
-          <Link key={link.id} to={link.url}>
-            {link.text}
-          </Link>
-        )
-      })}
+      {links.map((link) => (
+        <NavLink
+          key={link.id}
+          to={link.url}
+          className={pathname === link.url ? 'active-link' : ''}
+        >
+          {link.text}
+        </NavLink>
+      ))}
     </nav>
   )
 }
