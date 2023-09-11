@@ -377,6 +377,45 @@ main {
   z-index: 0;
 }
 
+/* not found pages */
+.title-not-found {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight:700;
+  font-size: 288px;
+  text-align: center;
+  color: #ff6060;
+  margin: 100px 0 0 0;
+}
+
+.not-found-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 1240px;
+}
+
+.p-not-found {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  text-align: center;
+  color: #ff6060;
+}
+
+.btn-not-found {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: underline;
+  line-height:25.67px;
+  text-align: center;
+  margin: 140px 0;
+  cursor: pointer;
+}
+
 .footer {
   background-color: #000;
   color: #fff;
