@@ -82,8 +82,8 @@ main {
   background-image: url("./assets/images/backgroundAboutUrl.png");
   background-size: cover;
   background-position: center;
-  opacity: 1; /* Opacity of the image */
-  filter: brightness(0.7); /* Darken the image */
+  opacity: 1;
+  filter: brightness(0.7);
   border-radius: 25px;
 }
 
@@ -101,6 +101,8 @@ main {
   font-family: Montserrat;
   font-size: 48px;
 }
+
+/* housing page */
 
 .housing-section {
   display: flex;
@@ -161,7 +163,7 @@ main {
   border-radius: 25px;
   margin: 150px auto;
   width: 90vw;
-  height: 650px;
+  height: 1OO%;
 }
 
 .image-container {
@@ -323,13 +325,15 @@ main {
   flex-direction: column;
   justify-content: space-between;
   background-color: #ff6060;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   color: white;
   align-items: left;
-  height: 50px;
   width: 510px;
 }
 
+.content__opened p {
+  padding-left: 20px;
+}
 .chevron {
   position: absolute;
   top: 0;
@@ -357,25 +361,21 @@ main {
   padding-left: 20px;
 }
 
-.content__opened p {
-  padding-left: 20px;
-}
-
 .content__description-hidde {
   display: none;
-
+ 
 }
 
 .content__description-open{
   background-color: #f6f6f6;
   color: #ff6060;
   border-radius: 0px 0px 10px 10px;
-  position: absolute;
-  top: 50px;
-  z-index: 2;
+  position: relative;
   width: 100%;
   min-height:100px;
 }
+
+/* house page */
 
 .house-content__equipments  {
   display:flex;
@@ -442,12 +442,13 @@ main {
 
 .about-width {
   width: 80vw;
+  height: 100%;
 }
 
 .about-section {
   height: auto;
 }
-
+/* footer */
 .footer {
   background-color: #000;
   color: #fff;

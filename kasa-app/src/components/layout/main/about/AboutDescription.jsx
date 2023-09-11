@@ -8,7 +8,7 @@ const AboutDescription = ({ about }) => {
   return (
     <div className="about-section">
       {aboutBox.map((data) => (
-        <Collapse key={data.id} width={"about-width"} {...data} />
+        <Collapse key={data.id} width={"about-width"}  {...data} />
       ))}
     </div>
   );
