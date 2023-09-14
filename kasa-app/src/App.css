@@ -137,6 +137,7 @@ main {
   grid-column-gap: 20px;
   grid-row-gap: 0px;
   margin: 55px auto;
+  cursor: pointer;
 }
 
 .housing-card__img {
