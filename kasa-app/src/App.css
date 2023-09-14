@@ -51,7 +51,8 @@ main {
   margin: 0 auto;
 }
 
-.backgroundUrl, .backgroundAboutUrl {
+.backgroundUrl,
+.backgroundAboutUrl {
   display: flex;
   position: relative;
   width: 90vw;
@@ -220,19 +221,19 @@ main {
   cursor: pointer;
 }
 
-.carousel-icon-left  {
+.carousel-icon-left {
   top: 45%;
   left: 20px;
 }
 
 .carousel-icon-right {
-  top:45%;
+  top: 45%;
   right: 20px;
-} 
+}
 
 .ranking-img {
   position: absolute;
-  color:white;
+  color: white;
   bottom: 15px;
   right: 50%;
   font-size: large;
@@ -367,22 +368,21 @@ main {
 
 .content__description-hidde {
   display: none;
- 
 }
 
-.content__description-open{
+.content__description-open {
   background-color: #f6f6f6;
   color: #ff6060;
   border-radius: 0px 0px 10px 10px;
   position: relative;
   width: 100%;
-  min-height:100px;
+  min-height: 100px;
 }
 
 /* house page */
 
-.house-content__equipments  {
-  display:flex;
+.house-content__equipments {
+  display: flex;
   flex-direction: column;
   list-style: none;
   width: 100%;
@@ -407,7 +407,7 @@ main {
 .title-not-found {
   font-family: Montserrat;
   font-style: normal;
-  font-weight:700;
+  font-weight: 700;
   font-size: 288px;
   text-align: center;
   color: #ff6060;
@@ -436,7 +436,7 @@ main {
   display: inline-block;
   font-size: 18px;
   text-decoration: underline;
-  line-height:25.67px;
+  line-height: 25.67px;
   text-align: center;
   margin: 140px 0;
   cursor: pointer;
@@ -479,4 +479,80 @@ main {
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%; /* 34.224px */
+}
+
+/*add media query for screen less than 1240px*/
+@media screen and (max-width: 1230px) {
+  .housing-card__container {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .housing-card__container {
+    width: 80%;
+  }
+  nav {
+    width: 150px;
+    text-transform: uppercase;
+  }
+  nav a {
+    font-size: 12px;
+  }
+  .display-title {
+    font-size: 24px;
+  }
+  .housing-card__container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    padding: 20px;
+  }
+
+  main {
+    padding: 100px 0 0 0;
+  }
+  .backgroundUrl {
+    height: 111px;
+    margin-top: 50px;
+  }
+  .display-title {
+    padding: 10px;
+    width: 85%;
+    text-align: left;
+  }
+  .logo-media-size {
+    width: 145px;
+    height: 45px;
+  }
+  .backgroundUrl {
+    margin-top:15px;
+  }
+  .housing-section {
+    margin-top: 30px;
+    width: 90vw;
+    max-width: 1240px;
+    height: auto;
+    background-color: transparent;
+  }
+  .housing-card__container {
+    width: 90vw;
+    margin: 20px auto;
+  }
+  .housing-card__img {
+    width: 90vw;
+  }
+  .housing-card__content {
+    width: 90vw;
+  }
+  .footer img {
+    margin-top: 65px;
+  }
+  .footer h4 {
+    font-size: 12px;
+    width: 122px;
+  }
 }
