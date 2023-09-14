@@ -13,14 +13,12 @@ const Carousel = ({ house }) => {
   return (
     <div className="image-container">
       <AiOutlineLeft
-        size={60}
         onClick={prevImage}
         className="carousel-icon-left"
       />
       <img src={house.pictures[currentImageIndex]} alt={house.title} />
       <span className="ranking-img">{ranking}</span>
       <AiOutlineRight
-        size={60}
         onClick={nextImage}
         className="carousel-icon-right"
       />
