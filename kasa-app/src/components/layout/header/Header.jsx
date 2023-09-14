@@ -6,7 +6,7 @@ import Navbar from "./detail/Navbar";
 const Header = () => {
   return (
     <header>
-      <Logo logo={LogoImg} altLabel={"logo"} />
+      <Logo className="logo-media-size" logo={LogoImg} altLabel={"logo"} />
       <Navbar />
     </header>
   );

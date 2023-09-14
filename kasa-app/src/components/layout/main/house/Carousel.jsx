@@ -1,26 +1,24 @@
 import React, { useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import { HandlePrevious, handleNext } from "../../../../utils";
+import { arrayRanking, next, previous } from "../../../../utils";
 
 const Carousel = ({ house }) => {
   //State
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const ranking = `${currentImageIndex + 1}/${house.pictures.length}`;
+  const ranking = arrayRanking(currentImageIndex, house);
   // Behavior
-  const nextImage = handleNext(currentImageIndex, house, setCurrentImageIndex);
-  const prevImage = HandlePrevious(currentImageIndex, house, setCurrentImageIndex);
+  const nextImage = next(currentImageIndex, house, setCurrentImageIndex);
+  const prevImage = previous(currentImageIndex, house, setCurrentImageIndex);
   //JSX
   return (
     <div className="image-container">
       <AiOutlineLeft
-        size={60}
         onClick={prevImage}
         className="carousel-icon-left"
       />
       <img src={house.pictures[currentImageIndex]} alt={house.title} />
       <span className="ranking-img">{ranking}</span>
       <AiOutlineRight
-        size={60}
         onClick={nextImage}
         className="carousel-icon-right"
       />
@@ -29,3 +27,5 @@ const Carousel = ({ house }) => {
 };
 
 export default Carousel;
+
+

@@ -17,3 +17,15 @@ export function HandlePrevious(currentImageIndex, house, state) {
     }
   };
 }
+
+export function arrayRanking(index, house) {
+  return `${index + 1}/${house.pictures.length}`;
+}
+
+export function previous(currentIndex, house, newState) {
+  return HandlePrevious(currentIndex, house, newState);
+}
+
+export function next(currentIndex, house, newState) {
+  return handleNext(currentIndex, house, newState);
+}
