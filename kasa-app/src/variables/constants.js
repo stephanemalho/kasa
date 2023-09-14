@@ -10,6 +10,10 @@ export const main = {
   alt: 'Kasa cover image',
 }
 
+export const heading = {
+  notFound: '404'
+}
+
 export const copyRight = {
   text: '© 2020 Kasa. All rights reserved',
 }

@@ -3,12 +3,13 @@ import Header from "../../layout/header/Header";
 import Footer from "../../layout/footer/Footer";
 import Title from "../../ReusableUI/Title";
 import NotFoundBlock from "../../layout/NotFoundContainer/NotFoundBlock";
+import { heading } from "../../../variables/constants";
 
 const NotFound = () => {
   return (
     <>
       <Header />
-      <Title title="404" className="title-not-found" />
+      <Title title={heading.notFound} className="title-not-found" />
       <NotFoundBlock />
       <Footer />
     </>
