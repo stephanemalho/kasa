@@ -415,7 +415,6 @@ main {
 }
 
 /* not found pages */
-
 .title-not-found {
   font-family: Montserrat;
   font-style: normal;
@@ -641,6 +640,10 @@ main {
   }
   .content__opened {
     width: 90vw;
+  }
+  /* About */
+  main {
+    padding: 100px 0 20px 0;
   }
   /*Not-found*/
   .title-not-found {
