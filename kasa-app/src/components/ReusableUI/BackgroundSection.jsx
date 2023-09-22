@@ -5,7 +5,7 @@ import Title from "./Title";
 const BackgroundSection = ({ titleStyle, bgUrl, title }) => {
   return (
     <section className={bgUrl}>
-      <Title className={titleStyle} title={title ? title : ""} />
+      <Title className={titleStyle} title={title ? title : null} />
     </section>
   );
 };
