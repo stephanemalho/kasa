@@ -1,11 +1,11 @@
 import React from "react";
 import Title from "./Title";
-import { main } from "../../variables/constants";
+// import { main } from "../../variables/constants";
 
-const BackgroundSection = ({ titleStyle, bgUrl }) => {
+const BackgroundSection = ({ titleStyle, bgUrl, title }) => {
   return (
     <section className={bgUrl}>
-      <Title className={titleStyle} title={main.title} />
+      <Title className={titleStyle} title={title ? title : ""} />
     </section>
   );
 };
